@@ -1,11 +1,11 @@
 .character{
-  width: 100px;
-  height: 100px;
+  width: 196px;
+  height: 170px;
   position:absolute;
-  bottom: 20%;
-  left: 10%;
-  background-image: url('mario.webp');
-  background-size: cover;
+  bottom: 0%;
+  right: 10%;
+  background-image: url('WillSmithSlap.png');
+  background-size: contain;
 }
 
 .jump{
@@ -22,3 +22,11 @@
       transform: rotate(-360deg);
     }
 }
+
+body{
+  background-image: url(oscarbackground.webp);
+  background-size:cover
+  
+}
+
+

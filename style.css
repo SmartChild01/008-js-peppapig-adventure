@@ -1,12 +1,23 @@
 .character{
-  width: 196px;
-  height: 170px;
+  width: 220px;
+  height: 200px;
   position:absolute;
-  bottom: 0%;
-  right: 10%;
-  background-image: url('WillSmithSlap.png');
+  bottom: 10%;
+  left: 10%;
+  background-image: url('peppapig.png');
   background-size: contain;
 }
+
+.enemy{
+width: 230%;
+height: 210%;
+position: absolute;
+bottom: 10%;
+left: 10%;
+background-image: url(dinosaur.png);
+background-size: contain;
+}
+
 
 .jump{
   animation: jump 1000ms forwards;
@@ -24,9 +35,21 @@
 }
 
 body{
-  background-image: url(oscarbackground.webp);
-  background-size:cover
+  background-image: url(peppapigbackground.jpg);
+  background-size:auto 100vh;
+
+  animation: move 5s linear infinite;
   
 }
+
+@keyframes move{
+0%{ 
+  background-position: 0px 0;
+}
+100%{
+  background-position: -2000px 0;
+}
+
+} 
 
 

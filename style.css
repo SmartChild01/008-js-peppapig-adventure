@@ -9,13 +9,14 @@
 }
 
 .enemy{
-width: 230%;
-height: 210%;
+width: 210px;
+height: 210px;
 position: absolute;
 bottom: 10%;
-left: 10%;
+right: 10%;
 background-image: url(dinosaur.png);
 background-size: contain;
+animation: dinosaur 2500ms infinite;
 }
 
 
@@ -34,6 +35,14 @@ background-size: contain;
     }
 }
 
+
+@keyframes dinosaur{
+  100%{
+    right: 100%;
+  }
+}
+
+
 body{
   background-image: url(peppapigbackground.jpg);
   background-size:auto 100vh;
@@ -49,7 +58,14 @@ body{
 100%{
   background-position: -2000px 0;
 }
+}
 
-} 
+.frontPeppaPig{
+  background-image: url(frontPeppaPig.png);
+  width: 100px;
+  height: 150px;
+  top: 57%;
+}
+
 
 
